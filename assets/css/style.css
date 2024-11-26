@@ -110,17 +110,18 @@ button {
 }
 
 input[type=email] {
-  width: 280px;
+  width: 330px;
   height: 40px;
   margin-top: 20px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
   text-align: center;
+  gap: 10px;
 }
 
 input[type=submit] {
-  width: 280px;
+  width: 220px;
   height: 40px;
   margin-top: 20px;
   border-radius: 10px;
@@ -399,9 +400,10 @@ footer {
 }
 
 .title--sus {
-  font-size: 29px;
+  font-size: 25px;
   padding: 0.5rem;
-  text-align: center;
+  text-align: left;
+  justify-content: left;
 }
 
 .div__sus {
@@ -414,6 +416,8 @@ footer {
   height: 190px;
   margin-top: 25px;
   margin-bottom: 25px;
+  margin-left: 15%;
+  width: 50%;
 }
 
 .sub__input {

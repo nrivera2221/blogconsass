@@ -68,9 +68,10 @@
     height: 230px;
 }
 .title--sus{
-font-size: 29px;
+font-size: 25px;
 padding: 0.5rem;
-text-align: center;
+text-align: left;
+justify-content: left;
 }
 .div__sus{
     @include mixin.display-flex(column);
@@ -80,7 +81,9 @@ text-align: center;
     border-radius: 20px;
     height: 190px;
     margin-top:25px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    margin-left:15%;
+    width: 50%;
 }
 .sub__input{
     @include mixin.display-flex(row);

@@ -1,17 +1,18 @@
 @use '../abstracts/variables'as variable;
 
 input[type="email"] {
-    width: 280px;
+    width: 330px;
     height: 40px;
     margin-top: 20px;
     border-radius: 10px;
     font-size: variable.$subtitulos-secundary;
     font-weight: 700;
     text-align: center;
+    gap: 10px;
 }
 
 input[type="submit"] {
-    width: 280px;
+    width: 220px;
     height: 40px;
     margin-top: 20px;
     border-radius: 10px;
