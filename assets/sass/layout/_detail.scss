@@ -1,0 +1,25 @@
+@use '../abstracts/mixin' as mixin;
+@use '../abstracts/variables' as variable;
+
+.detail__posts{
+    @include mixin.display-flex(column);
+    border-bottom: 2px solid variable.$color-border;
+}
+.container__paragraphs{
+    @include mixin.display-flex(column);
+    margin: 15px 0 15px 0;
+
+}
+.paragraphs_img{
+    display: grid;
+    place-items: center;
+    margin:20px 0 20px 0;
+}
+
+.detail__card{
+    @include mixin.display-flex(row);
+    justify-content: space-around;
+    height: auto;
+    margin:20px 0 20px 0;
+    border-bottom: 2px solid variable.$color-border;
+}

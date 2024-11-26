@@ -1,0 +1,23 @@
+@use '../abstracts/mixin' as mixin;
+@use '../abstracts/variables' as variable;
+footer {
+    @include mixin.display-flex(row);
+    justify-content: space-between;
+    margin: 15px 80px 15px 80px; // Superior, Derecho, Inferior, Izquierdo
+    height:120px;
+}
+.footer__logo{
+    @include mixin.display-flex(row);
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    img{
+        height: 70%;
+        display: inline-block;
+        border-radius: 20px 20px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+    h2{
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,75 @@
+@use '../abstracts/variables' as variable;
+@use '../abstracts/mixin' as mixin;
+h1{
+    font-family: "poppins";
+    font-size: variable.$titulo;
+    font-weight: 700;
+    color: variable.$color-letter-primary;
+}
+h2 {
+    font-family: "poppins";
+    font-size: variable.$subtitulos-secundary;
+    font-weight: 700;
+}
+h3{
+    font-family: "poppins";
+    font-size: variable.$titulo;
+    font-weight: 700;
+}
+p{
+    font-family: "poppins";
+    font-size: variable.$parrafos-secundary;
+    font-weight: 400;
+}
+a{
+    font-family: "poppins";
+    font-size: variable.$parrafos-secundary;
+    font-weight: 700;
+    color: variable.$color-letter-primary;
+    text-decoration: none;
+}
+.footer__text{
+    font-family: "poppins";
+    font-size: variable.$subtitulos-secundary;
+    font-weight: 500;
+    margin: 50px 0 50px 0; // Superior, Derecho, Inferior, Izquierdo
+}
+.card__title{
+    font-family: "poppins";
+    @include mixin.text(variable.$subtitulos,700);
+    margin-top: 10px;
+}
+.card__text{
+    font-family: "poppins";
+    @include mixin.text(variable.$parrafos,400);
+}
+.card__text--logo{
+    font-family: "poppins";
+    @include mixin.text(variable.$parrafos,500);
+}
+.card__title--secundary{
+    font-family: "poppins";
+    @include mixin.text(variable.$subtitulos-secundary,700);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card__text--secundary{
+    font-family: "poppins";
+    @include mixin.text(variable.$parrafos-secundary,400);
+}
+.title--sus{
+    font-family: "poppins";
+    color: variable.$color-letter-secundary;
+
+}
+.label__text{
+    font-family: "poppins";
+    color: variable.$color-letter-secundary;
+    font-weight: 700;
+    font-size: variable.$subtitulos;
+    margin-right: 20px;
+}
+
+i{
+    color: variable.$color-html;
+}

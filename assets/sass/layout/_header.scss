@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as variable;
+header {
+    height:120px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid variable.$color-border;
+    margin: 15px 80px 15px 80px;
+
+    img{
+        height: 70%;
+        display: inline-block;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    h2{
+        display: inline-block;
+        margin-left: 10px;
+    }
+}

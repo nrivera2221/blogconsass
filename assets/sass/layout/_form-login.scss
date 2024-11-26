@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as variable;
+@use '../abstracts/mixin' as mixin;
+.form{
+    display: flex;
+    form{
+        width: 60vw;
+        @include mixin.display-flex(column);
+        align-items: center;
+        color: variable.$color-letter-primary;
+        h3{
+            margin-top: 2rem;
+            margin: 20px;
+        }
+    }
+}

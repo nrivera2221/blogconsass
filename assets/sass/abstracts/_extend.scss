@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as variable;
+%titulos {
+    margin-top: 2rem;
+    font-size: variable.$titulo;
+    font-weight: 700;
+    color: variable.$color-letter-primary;
+} 

@@ -1,0 +1,88 @@
+@use '../abstracts/variables' as variable;
+@use '../abstracts/mixin' as mixin;
+
+.posts{
+    @include mixin.display-flex(column);
+    color: variable.$color-letter-primary;
+    border-bottom: 2px solid variable.$color-border;
+    h2{
+        text-align: left;
+    }
+}
+.title{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.popular{
+    @include mixin.display-flex(column);
+    color: variable.$color-letter-primary;
+    border-bottom: 2px solid variable.$color-border;
+}
+.title--popular{
+    @include mixin.display-flex(row);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    .first__div{
+        width: 60%;
+    }
+}
+.container{
+    @include mixin.display-flex(row);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.label{
+    @include mixin.display-flex(row);
+    justify-content: space-between; 
+    align-items: center;
+    margin:20px; // Superior, Derecho, Inferior, Izquierdo
+    width: 298px;
+    height: 89px;
+    border-radius: 20px;
+}
+.label__image{
+    @include mixin.image-desing(85px,74px,10px);
+    margin-left: 20px;
+}
+.label--html{
+    background-color: variable.$color-html;
+}
+.label--js{
+    background-color: variable.$color-js;
+}
+.label--css{
+    background-color: variable.$color-css;
+}
+.label--react{
+    background-color: variable.$color-react;
+}
+.label--vue{
+    background-color: variable.$color-vue;
+}
+.label--bootstrap{
+    background-color: variable.$color-boostrap;
+}
+.sus{
+    border-bottom: 2px solid variable.$color-border;
+    height: 230px;
+}
+.title--sus{
+font-size: 29px;
+padding: 0.5rem;
+text-align: center;
+}
+.div__sus{
+    @include mixin.display-flex(column);
+    justify-content: center;
+    align-items: center;
+    background-color: variable.$color-fondo;
+    border-radius: 20px;
+    height: 190px;
+    margin-top:25px;
+    margin-bottom: 25px
+}
+.sub__input{
+    @include mixin.display-flex(row);
+    margin-left: 10px;
+}

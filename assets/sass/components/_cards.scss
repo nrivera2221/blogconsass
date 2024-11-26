@@ -1,0 +1,58 @@
+@use '../abstracts/variables' as variable;
+@use '../abstracts/mixin' as mixin;
+
+.posts__card{
+    @include mixin.display-flex(row);
+    width: 100%;
+}
+.container__card{
+    width: 60%;
+    margin-bottom: 15px
+}
+.card{
+    @include mixin.display-flex(column);
+    margin-bottom: 20px;
+}
+.card__image{
+    @include mixin.image-desing(604px,314px,20px);
+}
+.card__logo{
+    @include mixin.display-flex(row);
+    align-items: center;
+}
+.card__image--logo{
+    @include mixin.image-desing(30px,30px,50%);
+    margin-right: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.container__card--secundary{
+    @include mixin.display-flex(column);
+    width: 40%;
+}
+.card--secundary{
+    @include mixin.display-flex(row);
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card__image--secundary{
+    @include mixin.image-desing(189px,145px,20px);
+    margin-right: 10px;
+}
+.container__card--third{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 100px;
+}
+.card--third{
+    width: 340px;
+    height: auto;
+    padding: 50px;
+    padding-top: 0px;
+}
+.card__image--third{
+    @include mixin.image-desing(298px,200px,20px);
+}
+.card__title--secundary{
+text-align: left;
+}

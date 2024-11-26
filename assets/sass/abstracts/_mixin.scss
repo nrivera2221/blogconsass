@@ -1,0 +1,15 @@
+/**/
+@mixin display-flex($value) {
+    display: flex;
+    flex-direction: $value;
+}
+@mixin image-desing($width,$height,$border-radius){
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}
+
+@mixin text($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+}

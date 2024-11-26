@@ -1,0 +1,60 @@
+@use '../abstracts/variables'as variable;
+
+input[type="email"] {
+    width: 280px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: variable.$subtitulos-secundary;
+    font-weight: 700;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 280px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: variable.$subtitulos-secundary;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button-login {
+    background-color: variable.$color-fondo;
+    color: variable.$color-letter-secundary;
+}
+
+.btn-google {
+    display: inline-block;
+    padding: 10px 20px;
+    height: 50px;
+    width: 500px;
+    font-size: variable.$subtitulos-secundary;
+    background-color: variable.$color-border;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    border: 1px solid variable.$color-border;
+    border-radius: 10px;
+    height: 40px;
+    width: 70%;
+    margin-bottom: 2rem;
+    font-size: variable.$subtitulos-secundary;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.sub_button {
+    background-color: variable.$color-border;
+    color: variable.$color-letter-primary;
+    margin-left: 10px;
+}
